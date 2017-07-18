@@ -13,28 +13,28 @@
         <h1>Buy Your Ticket!</h1>
       </div>
         <div class="col-md-6">
-        <form class="tickets" action="index.html" method="post">
+        <form id="tickets">
           <h2>Name</h2>
           <div class="form-group">
             <label for="names">Cinema Guest:</label>
-            <input type="text" class="form-control" id="names">
+            <input id="names" type="text" class="form-control"  value="">
           </div>
           <h2>Age</h2>
           <div class="radio">
             <label>
-              <input type="radio" name="age" value="9"  >
+              <input type="radio" name="age" value="child"  >
               Age : less than 13 years old
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="age" value="12">
+              <input type="radio" name="age" value="adult">
               Age : Neither less than 13 years old, nor over 55 years old.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="age" value="9">
+              <input type="radio" name="age" value="senior">
               Age : Over 55 years old.
             </label>
           </div>
@@ -42,19 +42,19 @@
           <h2>Time of Day</h2>
           <div class="radio">
             <label>
-              <input type="radio" name="time" value="1">
+              <input type="radio" name="time" value="morning">
               Time : Morning
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="time" value="2">
+              <input type="radio" name="time" value="afternoon">
               Time : Afternoon
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="time" value="3">
+              <input type="radio" name="time" value="evening">
               Time : Evening
             </label>
           </div>
@@ -62,19 +62,19 @@
           <h2>Movie Title</h2>
           <div class="radio">
             <label>
-              <input type="radio" name="titles" value="4"  >
+              <input type="radio" name="titles" value="new-release"  >
               Movie : Spider-Man Homecoming 3D
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="titles" value="3">
+              <input type="radio" name="titles" value="vintage">
               Movie : Breakfast at Tiffany's
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="titles" value="2">
+              <input type="radio" name="titles" value="second-run">
               Movie : Star Wars, 2016
             </label>
           </div>
@@ -88,7 +88,11 @@
           </div>
           <div class="panel-body">
             <div class="output">
-              <ul class="outputPrice">
+              <ul>
+              </ul>
+            </div>
+            <div class="outputPrice">
+              <ul>
               </ul>
             </div>
           </div>
