@@ -1,21 +1,34 @@
 //Business Logic
-function Ticket(age, time, titles) {
+function Ticket(names, age, time, titles) {
+  this.names = name;
   this.age = age;
   this.time = time;
   this.titles = titles;
 }
- function ticketPrice(age, time, titles) {
-  return age + time + titles
+
+Ticket.prototype.ticketDetails = function(){
+  return this.names + ", " + this.age + ", " + this.time + ", " + this.titles;
 }
+
 //UI Logic
 $(function(){
   $(".tickets").submit(function(event){
     event.preventDefault();
-    var age = parseInt($("input:radio[name=age]:checked").val());
-    var time = parseInt($("input:radio[name=time]:checked").val());
-    var titles = parseInt($("input:radio[name=titles]:checked").val());
-    $(".outputPrice").empty();
-    $(".outputPrice").append("<li>" + " $" + ticketPrice(age, time, titles) + "</li>");
-    //var age = val("")
+
+      var inputtedNames = $('input#names').val();
+      var inputtedAge = $("input:radio[name=age]:checked").val();
+      var inputtedTime = $("input:radio[name=time]:checked").val();
+      var inputtedTitle = $("input:radio[name=titles]:checked").val();
+
+
+      var newTicketDetails = (inputtedNames, inputtedAge, inputtedTime, inputtedTitle);
+      alert(newTicketDetails)
+
+  //  $(".outputPrice").empty();
+    newTicketDetails.forEach(function(newTicketDetail){
+      $("ul.outputPrice").append("<li>" + newTicketDetail.ticketDetails() + "</li>");
+    });
+    $('#names').val('');
+    $('.radio').val('');
   });
 });

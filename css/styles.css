@@ -9,9 +9,17 @@ body {
   background: url("../img/movie.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: black;
 }
 .jumbotron {
   background: inherit;
+  text-align: center;
+}
+
+.panel {
+  background: inherit;
+}
+
+.panel-heading {
   text-align: center;
 }

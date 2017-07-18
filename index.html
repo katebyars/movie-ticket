@@ -12,77 +12,88 @@
       <div class="jumbotron">
         <h1>Buy Your Ticket!</h1>
       </div>
-      <form class="tickets" action="index.html" method="post">
-        <h2>Age</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="age" value="9"  >
-            Age : less than 13 years old
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="age" value="12">
-            Age : Neither less than 13 years old, nor over 55 years old.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="age" value="9">
-            Age : Over 55 years old.
-          </label>
-        </div>
+        <div class="col-md-6">
+        <form class="tickets" action="index.html" method="post">
+          <h2>Name</h2>
+          <div class="form-group">
+            <label for="names">Cinema Guest:</label>
+            <input type="text" class="form-control" id="names">
+          </div>
+          <h2>Age</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="age" value="9"  >
+              Age : less than 13 years old
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="age" value="12">
+              Age : Neither less than 13 years old, nor over 55 years old.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="age" value="9">
+              Age : Over 55 years old.
+            </label>
+          </div>
 
-        <h2>Time of Day</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="time" value="1">
-            Time : Morning
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="time" value="2">
-            Time : Afternoon
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="time" value="3">
-            Time : Evening
-          </label>
-        </div>
+          <h2>Time of Day</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="time" value="1">
+              Time : Morning
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="time" value="2">
+              Time : Afternoon
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="time" value="3">
+              Time : Evening
+            </label>
+          </div>
 
-        <h2>Movie Title</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="titles" value="4"  >
-            Movie : Spider-Man Homecoming 3D
-          </label>
+          <h2>Movie Title</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="titles" value="4"  >
+              Movie : Spider-Man Homecoming 3D
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="titles" value="3">
+              Movie : Breakfast at Tiffany's
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="titles" value="2">
+              Movie : Star Wars, 2016
+            </label>
+          </div>
+          <button type="submit" class="btn btn-warning">Buy My Ticket!</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2>Your Tickets</h2>
+          </div>
+          <div class="panel-body">
+            <div class="output">
+              <ul class="outputPrice">
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="titles" value="3">
-            Movie : Breakfast at Tiffany's
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="titles" value="2">
-            Movie : Star Wars, 2016
-          </label>
-        </div>
-        <button type="submit" class="btn btn-warning">Buy My Ticket!</button>
-      </form>
-    <div class="output">
-      <p>
-        <h2>Your Ticket Price</h2>
-      </p>
-        <ul class="outputPrice">
-
-        </ul>
+      </div>
     </div>
-    </div>
-
   </body>
 </html>
